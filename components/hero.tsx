@@ -29,10 +29,10 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vh] bg-[#FF2E2E]/20 rounded-full blur-[120px] pointer-events-none" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex-1 flex flex-col items-center pt-32 px-4 w-full max-w-[1400px] mx-auto">
+      <div className="relative z-10 flex-1 flex flex-col items-center pt-24 md:pt-32 px-4 w-full max-w-[1400px] mx-auto">
         
         {/* Badge */}
-        <div className="flex items-center gap-2 border border-[#FF2E2E]/30 bg-black/50 px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
+        <div className="hidden md:flex items-center gap-2 border border-[#FF2E2E]/30 bg-black/50 px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
           <ShieldCheck className="w-5 h-5 text-[#FF2E2E]" />
           <span className="text-[#FF2E2E] text-sm font-bold tracking-widest uppercase">
             Mangaluru's Premium Car Care Studio
@@ -40,13 +40,13 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-6xl md:text-[84px] font-extrabold text-white text-center leading-tight mb-8 tracking-tight">
+        <h1 className="text-5xl sm:text-6xl md:text-[84px] font-extrabold text-white text-center leading-tight mb-6 md:mb-8 tracking-tight">
           Your Car Deserves <br />
           Better Than a <span className="text-[#FF2E2E] bg-clip-text text-transparent bg-gradient-to-r from-white/20 to-[#FF2E2E] to-90%">Wash.</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-400 text-center max-w-3xl text-base md:text-xl leading-relaxed mb-16">
+        <p className="text-gray-400 text-center max-w-3xl text-sm sm:text-base md:text-xl leading-relaxed mb-8 md:mb-16 px-2">
           Ceramic coating, PPF, and precision detailing — engineered with German technology, finished by
           hand. For cars and bikes in Falnir, Mangaluru.
         </p>
