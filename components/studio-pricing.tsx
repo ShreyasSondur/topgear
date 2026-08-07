@@ -83,8 +83,9 @@ export default function StudioPricing() {
           </p>
           
           <Link
-            href="/book"
-            className="bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,46,46,0.4)] shrink-0"
+            href="?book=true"
+            scroll={false}
+            className="mt-8 w-full bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,46,46,0.3)] group-hover:shadow-[0_0_30px_rgba(255,46,46,0.5)] md:w-auto md:py-3 md:px-6 md:rounded-full md:shadow-[0_0_20px_rgba(255,46,46,0.4)]"
           >
             <Calendar className="w-4 h-4" />
             <span className="text-xs md:text-sm font-bold tracking-wider uppercase">

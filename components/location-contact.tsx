@@ -162,7 +162,8 @@ export default function LocationContact() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Link
-                    href="/book"
+                    href="?book=true"
+                    scroll={false}
                     className="w-full bg-[#111] border border-white/10 hover:bg-[#222] text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all"
                   >
                     <Calendar className="w-4 h-4 text-gray-400" />

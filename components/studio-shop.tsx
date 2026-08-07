@@ -84,13 +84,13 @@ export default function StudioShop() {
           <div className="flex items-center gap-3 shrink-0 mb-2">
             <button 
               onClick={() => scroll('left')}
-              className="w-10 h-10 rounded-full bg-[#111111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/20 transition-all"
+              className="cursor-pointer w-10 h-10 rounded-full bg-[#111111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/20 transition-all"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="w-10 h-10 rounded-full bg-[#111111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/20 transition-all"
+              className="cursor-pointer w-10 h-10 rounded-full bg-[#111111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/20 transition-all"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

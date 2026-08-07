@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ShoppingBag, Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -20,25 +20,12 @@ export default function Navbar() {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-2">
-          {/* Shop Button */}
-          <Link
-            href="/shop"
-            className="flex items-center gap-2 hover:bg-white/10 px-4 py-2 rounded-full transition-colors relative"
-          >
-            <div className="relative">
-              <ShoppingBag className="w-4 h-4 text-gray-300" />
-              <span className="absolute -top-2 -right-2 bg-[#FF2E2E] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
-                2
-              </span>
-            </div>
-            <span className="text-gray-300 font-semibold text-xs tracking-wider uppercase hidden sm:block">
-              Shop
-            </span>
-          </Link>
+
 
           {/* Book Slot Button */}
           <Link
-            href="/book"
+            href="?book=true"
+            scroll={false}
             className="bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white px-5 py-2.5 rounded-full flex items-center gap-2 transition-all shadow-[0_0_15px_rgba(255,46,46,0.4)]"
           >
             <Calendar className="w-4 h-4" />

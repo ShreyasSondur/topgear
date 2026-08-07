@@ -22,8 +22,9 @@ export default function WhatWeDo() {
           </div>
           
           <Link
-            href="/book"
-            className="bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,46,46,0.4)] shrink-0"
+            href="?book=true"
+            scroll={false}
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white px-8 py-4 rounded-full font-bold tracking-wider uppercase transition-all shadow-[0_0_20px_rgba(255,46,46,0.4)]"
           >
             <Calendar className="w-5 h-5" />
             <span className="text-sm font-bold tracking-wider uppercase">

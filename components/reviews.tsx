@@ -55,13 +55,13 @@ export default function Reviews() {
           <div className="flex items-center gap-3 shrink-0 mb-2 md:mb-4">
             <button 
               onClick={() => scroll('left')}
-              className="w-9 h-9 rounded-full bg-[#111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/10 transition-all"
+              className="cursor-pointer w-9 h-9 rounded-full bg-[#111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/10 transition-all"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="w-9 h-9 rounded-full bg-[#111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/10 transition-all"
+              className="cursor-pointer w-9 h-9 rounded-full bg-[#111] border border-white/5 flex items-center justify-center text-white hover:bg-[#222] hover:border-white/10 transition-all"
             >
               <ChevronRight className="w-4 h-4" />
             </button>
