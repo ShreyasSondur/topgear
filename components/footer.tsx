@@ -95,12 +95,12 @@ export default function Footer() {
             href="https://www.technologi.in/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-3 md:gap-4 px-6 md:px-8 py-3 rounded-full bg-[#111111] border border-white/5 hover:border-white/10 hover:bg-[#161616] transition-all duration-700 hover:shadow-[0_0_30px_rgba(37,211,102,0.1)] cursor-pointer relative overflow-hidden"
+            className="group flex items-center justify-center gap-2 sm:gap-3 md:gap-4 px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full bg-[#111111] border border-white/5 hover:border-white/10 hover:bg-[#161616] transition-all duration-700 hover:shadow-[0_0_30px_rgba(37,211,102,0.1)] cursor-pointer relative overflow-hidden"
           >
             {/* Shine effect across the entire pill */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out" />
             
-            <span className="text-gray-500 text-[9px] md:text-[10px] font-semibold tracking-[0.2em] uppercase group-hover:text-gray-300 transition-colors duration-500 relative z-10 mt-0.5">
+            <span className="text-gray-500 text-[8px] sm:text-[9px] md:text-[10px] font-semibold tracking-[0.2em] uppercase group-hover:text-gray-300 transition-colors duration-500 relative z-10 mt-0.5">
               Developed By
             </span>
             
@@ -108,8 +108,8 @@ export default function Footer() {
             <div className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-[#FF2E2E] transition-colors duration-500 relative z-10" />
             
             <div className="flex items-baseline relative z-10 group-hover:scale-105 transition-transform duration-500">
-              <span className="text-[#FF2E2E] font-black italic text-base md:text-lg tracking-tighter drop-shadow-[0_0_8px_rgba(255,46,46,0.3)]">Techno</span>
-              <span className="text-[#25D366] font-black text-base md:text-lg tracking-tight drop-shadow-[0_0_8px_rgba(37,211,102,0.3)]">LOGI</span>
+              <span className="text-[#FF2E2E] font-black italic text-sm sm:text-base md:text-lg tracking-tighter drop-shadow-[0_0_8px_rgba(255,46,46,0.3)]">Techno</span>
+              <span className="text-[#25D366] font-black text-sm sm:text-base md:text-lg tracking-tight drop-shadow-[0_0_8px_rgba(37,211,102,0.3)]">LOGI</span>
             </div>
           </Link>
         </div>

@@ -162,7 +162,7 @@ export default function BookingModal() {
                       setSelectedDate(day);
                       setSelectedTime(null); // reset time on new date
                     }}
-                    className={`cursor-pointer flex flex-col items-center gap-1 md:gap-2 p-2 md:p-3 rounded-xl border transition-all ${
+                    className={`cursor-pointer flex flex-col items-center gap-0.5 sm:gap-1 md:gap-2 p-1.5 sm:p-2 md:p-3 rounded-xl border transition-all ${
                       isPastDay
                         ? "border-transparent text-gray-700 cursor-not-allowed"
                         : isSelected
@@ -170,10 +170,10 @@ export default function BookingModal() {
                         : "border-transparent text-gray-400 hover:bg-white/5 hover:text-white"
                     }`}
                   >
-                    <span className="text-[10px] md:text-xs font-medium uppercase tracking-wider">
+                    <span className="text-[8px] sm:text-[10px] md:text-xs font-medium uppercase tracking-wider">
                       {dayName}
                     </span>
-                    <span className={`text-sm md:text-lg font-bold ${isSelected ? "text-white" : ""}`}>
+                    <span className={`text-xs sm:text-sm md:text-lg font-bold ${isSelected ? "text-white" : ""}`}>
                       {dateNum}
                     </span>
                   </button>
