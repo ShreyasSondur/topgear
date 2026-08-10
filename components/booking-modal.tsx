@@ -107,9 +107,9 @@ export default function BookingModal() {
       />
       
       {/* Modal */}
-      <div className="relative bg-[#161616] border border-white/10 rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col">
+      <div className="relative bg-[#161616] border border-white/10 rounded-2xl w-full max-w-2xl max-h-[95vh] md:max-h-[90vh] overflow-hidden shadow-2xl flex flex-col">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-white/10">
+        <div className="flex items-center justify-between p-4 md:p-6 border-b border-white/10 shrink-0">
           <div className="flex items-center gap-3">
             <Calendar className="w-5 h-5 text-[#FF2E2E]" />
             <h2 className="text-white text-lg font-bold tracking-tight">
@@ -124,7 +124,7 @@ export default function BookingModal() {
           </button>
         </div>
 
-        <div className="p-6 md:p-8 flex flex-col gap-8">
+        <div className="p-4 md:p-8 flex flex-col gap-6 md:gap-8 overflow-y-auto">
           {/* Calendar Section */}
           <div className="flex flex-col gap-6">
             <div className="flex items-center justify-between">
@@ -235,6 +235,8 @@ export default function BookingModal() {
               <ChevronRight className="w-4 h-4" />
             </button>
           )}
+          {/* Bottom padding for mobile scrolling */}
+          <div className="h-4 md:h-0 shrink-0" />
         </div>
       </div>
     </div>
