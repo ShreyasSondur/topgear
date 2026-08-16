@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ChevronLeft, ChevronRight, ShoppingBag, Truck, ShieldCheck, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Truck, ShieldCheck, Star, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,8 @@ export default function StudioShop() {
 
   const products = [
     {
-      title: "Topgear Shadow Crown Luxur...",
+      title: "Topgear Shadow Crown Luxury Car Cologne",
+      displayTitle: "Topgear Shadow Crown Luxur...",
       desc: "Premium luxury car cologne formulated with notes of rich mahogany, velvet amber, and crisp...",
       price: "₹699",
       oldPrice: "₹999",
@@ -29,7 +30,8 @@ export default function StudioShop() {
       img: "/images/s1.png"
     },
     {
-      title: "Topgear Forest Flow Botanical...",
+      title: "Topgear Forest Flow Botanical Air Refresher",
+      displayTitle: "Topgear Forest Flow Botanical...",
       desc: "Natural botanical interior air refresher infused with Swiss pine needles, mountain cedar, and a...",
       price: "₹699",
       oldPrice: "₹999",
@@ -40,7 +42,8 @@ export default function StudioShop() {
       img: "/images/s2.png"
     },
     {
-      title: "Topgear Exotic Black Leather...",
+      title: "Topgear Exotic Black Leather Fragrance",
+      displayTitle: "Topgear Exotic Black Leather...",
       desc: "Exotic dark spice & fine leather fragrance engineered specifically for luxury cabins, restori...",
       price: "₹699",
       oldPrice: "₹999",
@@ -51,7 +54,8 @@ export default function StudioShop() {
       img: "/images/s3.png"
     },
     {
-      title: "Topgear Midnight Mist...",
+      title: "Topgear Midnight Mist Interior Perfume",
+      displayTitle: "Topgear Midnight Mist...",
       desc: "Sophisticated night-blooming jasmine and musk designed to neutralize odors and leave a lastin...",
       price: "₹699",
       oldPrice: "₹999",
@@ -62,6 +66,19 @@ export default function StudioShop() {
       img: "/images/s3.png"
     }
   ];
+
+  const getWhatsAppUrl = (product: typeof products[0]) => {
+    const phone = "917090795976";
+    const text = `👋 Hi Topgear Studio! I would like to buy:
+
+🛍️ *Product:* ${product.title}
+📦 *Volume:* ${product.volume}
+💰 *Price:* ${product.price} (MRP: ${product.oldPrice})
+
+Please share the payment link & delivery details for my order! 🚗✨`;
+
+    return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+  };
 
   return (
     <section className="bg-[#0a0a0a] py-24 px-4 sm:px-8">
@@ -152,7 +169,7 @@ export default function StudioShop() {
                 </div>
                 
                 <h4 className="text-white font-bold text-lg mb-3 leading-snug">
-                  {product.title}
+                  {product.displayTitle}
                 </h4>
                 
                 <p className="text-gray-400 text-xs leading-relaxed mb-8 flex-1">
@@ -172,12 +189,17 @@ export default function StudioShop() {
                     </div>
                   </div>
                   
-                  <button className="bg-[#FF2E2E] hover:bg-[#e62929] text-white px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all shadow-[0_0_15px_rgba(255,46,46,0.2)] shrink-0">
-                    <ShoppingBag className="w-4 h-4" />
+                  <a
+                    href={getWhatsAppUrl(product)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FF2E2E] hover:bg-[#e62929] text-white px-4 py-2.5 rounded-xl flex items-center gap-2 transition-all shadow-[0_0_15px_rgba(255,46,46,0.2)] hover:shadow-[0_0_20px_rgba(255,46,46,0.4)] shrink-0 cursor-pointer group"
+                  >
+                    <MessageCircle className="w-4 h-4 group-hover:scale-110 transition-transform" />
                     <span className="text-[10px] font-bold tracking-wider uppercase text-left leading-[1.1]">
-                      Add To<br />Cart
+                      Buy<br />Now
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

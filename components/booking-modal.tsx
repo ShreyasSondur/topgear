@@ -91,7 +91,7 @@ export default function BookingModal() {
 
 *Date:* ${dateStr}
 *Time:* ${selectedTime}`;
-    const whatsappUrl = `https://wa.me/918660415798?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/917090795976?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");

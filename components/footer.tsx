@@ -44,7 +44,7 @@ export default function Footer() {
               </p>
               <div>
                 <Link
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/917090795976"
                   target="_blank"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white px-5 py-2.5 rounded-full transition-all shadow-[0_0_20px_rgba(255,46,46,0.2)]"
                 >
@@ -75,7 +75,12 @@ export default function Footer() {
           <div className="md:col-span-1 bg-[#111111] border border-white/5 rounded-3xl p-8 flex flex-col items-center justify-center gap-8 min-h-[320px]">
             <h3 className="text-xl font-bold text-white">Social</h3>
             <div className="flex flex-col gap-6">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link 
+                href="https://www.instagram.com/topgear.tg?igsh=a2l3d3hvdGtsNzk=&igsi=a2l3d3hvdGtsNzk="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">

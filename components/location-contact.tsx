@@ -87,7 +87,7 @@ export default function LocationContact() {
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1.5">Reach Out to Us</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    81051 56999
+                    +91 70907 95976
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function LocationContact() {
                   </label>
                   <input 
                     type="tel" 
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 70907 95976"
                     className="w-full bg-[#111] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-gray-600 focus:outline-none focus:border-[#FF2E2E]/50 transition-colors"
                   />
                 </div>
@@ -172,7 +172,7 @@ export default function LocationContact() {
                     </span>
                   </Link>
                   <Link
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/917090795976"
                     target="_blank"
                     className="w-full bg-[#111] border border-white/10 hover:bg-[#222] text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all"
                   >
