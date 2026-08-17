@@ -29,22 +29,27 @@ export default function LocationContact() {
           <div className="flex flex-col gap-6">
             
             {/* Map Container */}
-            <div className="relative w-full aspect-[4/3] md:aspect-video rounded-3xl overflow-hidden border border-white/5 bg-[#111]">
+            <Link 
+              href="https://maps.app.goo.gl/g46mipwkutXeqARS9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-full aspect-[4/3] md:aspect-video rounded-3xl overflow-hidden border border-white/5 bg-[#111] group cursor-pointer block"
+            >
               <Image
                 src="/images/map.png"
                 alt="Studio Location Map"
                 fill
-                className="object-cover opacity-80"
+                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
               />
               {/* Map Pin Overlay */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="w-10 h-10 bg-[#FF2E2E]/20 rounded-full flex items-center justify-center animate-pulse">
+                <div className="w-10 h-10 bg-[#FF2E2E]/20 rounded-full flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform">
                   <div className="w-6 h-6 bg-[#FF2E2E] rounded-full flex items-center justify-center shadow-lg shadow-[#FF2E2E]/50">
                     <MapPin className="w-3.5 h-3.5 text-white" />
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Info Card */}
             <div className="bg-[#161616] border border-white/5 rounded-3xl p-8 flex flex-col gap-6">
@@ -56,9 +61,14 @@ export default function LocationContact() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1.5">Studio Address</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Opp. Highland Hospital, Falnir Road, Mangaluru, Karnataka 575002
-                  </p>
+                  <Link 
+                    href="https://maps.app.goo.gl/g46mipwkutXeqARS9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors text-sm leading-relaxed block"
+                  >
+                    TOPGEAR HQ, Donbasco Hall, Falnir Cross Road, Manglore, Karnataka - 575001
+                  </Link>
                 </div>
               </div>
 
@@ -87,7 +97,7 @@ export default function LocationContact() {
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1.5">Reach Out to Us</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    +91 70907 95976
+                    +91 81051 56999
                   </p>
                 </div>
               </div>
@@ -121,7 +131,7 @@ export default function LocationContact() {
                   </label>
                   <input 
                     type="tel" 
-                    placeholder="+91 70907 95976"
+                    placeholder="+91 81051 56999"
                     className="w-full bg-[#111] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-gray-600 focus:outline-none focus:border-[#FF2E2E]/50 transition-colors"
                   />
                 </div>
@@ -172,7 +182,7 @@ export default function LocationContact() {
                     </span>
                   </Link>
                   <Link
-                    href="https://wa.me/917090795976"
+                    href="https://wa.me/918105156999"
                     target="_blank"
                     className="w-full bg-[#111] border border-white/10 hover:bg-[#222] text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 transition-all"
                   >

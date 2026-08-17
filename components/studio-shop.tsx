@@ -68,7 +68,7 @@ export default function StudioShop() {
   ];
 
   const getWhatsAppUrl = (product: typeof products[0]) => {
-    const phone = "917090795976";
+    const phone = "918105156999";
     const text = `👋 Hi Topgear Studio! I would like to buy:
 
 🛍️ *Product:* ${product.title}
