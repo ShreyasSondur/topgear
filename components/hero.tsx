@@ -122,7 +122,7 @@ export default function Hero() {
             </div>
             <div className="hidden md:block w-px h-4 bg-white/10" />
             <div className="text-gray-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors cursor-pointer">
-              Open 7 Days • 9 AM–5 PM
+              Open 7 Days • 9 AM–8 PM
             </div>
             <div className="hidden md:block w-px h-4 bg-white/10" />
             <div className="text-gray-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors cursor-pointer">

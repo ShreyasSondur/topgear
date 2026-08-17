@@ -82,7 +82,7 @@ export default function LocationContact() {
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1.5">Working Hours</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Open 7 Days a Week: 9:00 AM – 5:00 PM
+                    Open 7 Days a Week: 9:00 AM – 8:00 PM
                   </p>
                 </div>
               </div>
