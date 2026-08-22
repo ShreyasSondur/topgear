@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ChevronLeft, ChevronRight, Truck, ShieldCheck, Star, MessageCircle, Sparkles, Gift } from "lucide-react";
+import { ChevronLeft, ChevronRight, Truck, ShieldCheck, Star, MessageCircle, Sparkles, Gift, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -261,33 +261,37 @@ Please share the payment link & delivery details for my combo order! 🚗✨`;
         </div>
 
         {/* Trust Badges Footer */}
-        <div className="mt-8 bg-[#161616] border border-white/5 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-4">
+        <div className="mt-8 bg-[#161616] border border-white/5 rounded-2xl p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4 items-start">
           
           <div className="flex items-start gap-4">
             <Truck className="w-6 h-6 text-[#FF2E2E] shrink-0 mt-1" />
             <div>
-              <h5 className="text-white font-semibold text-sm mb-1">Pan-India Express Delivery</h5>
-              <p className="text-gray-500 text-xs">Dispatched within 24 hours (3-5 business days)</p>
+              <h5 className="text-white font-semibold text-sm mb-1">Pan-India Express</h5>
+              <p className="text-gray-500 text-xs">Dispatched within 24 hours</p>
             </div>
           </div>
-          
-          <div className="hidden md:block w-px h-10 bg-white/5" />
           
           <div className="flex items-start gap-4">
             <ShieldCheck className="w-6 h-6 text-[#FF2E2E] shrink-0 mt-1" />
             <div>
-              <h5 className="text-white font-semibold text-sm mb-1">Studio Tested Formulas</h5>
-              <p className="text-gray-500 text-xs">Tested in coastal weather on high-end vehicles</p>
+              <h5 className="text-white font-semibold text-sm mb-1">Studio Tested</h5>
+              <p className="text-gray-500 text-xs">Coastal weather proven</p>
             </div>
           </div>
-          
-          <div className="hidden md:block w-px h-10 bg-white/5" />
           
           <div className="flex items-start gap-4">
             <Star className="w-6 h-6 text-[#cba358] shrink-0 mt-1" />
             <div>
-              <h5 className="text-white font-semibold text-sm mb-1">Free Shipping Above ₹999</h5>
-              <p className="text-gray-500 text-xs">Automatic discount at checkout</p>
+              <h5 className="text-white font-semibold text-sm mb-1">Free Shipping</h5>
+              <p className="text-gray-500 text-xs">On orders above ₹999</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <FileText className="w-6 h-6 text-[#FF2E2E] shrink-0 mt-1" />
+            <div>
+              <h5 className="text-white font-semibold text-sm mb-1">GST Tax Invoice</h5>
+              <p className="text-gray-400 text-xs font-mono font-medium">GSTIN: 29DOHPB1768C1Z2</p>
             </div>
           </div>
 

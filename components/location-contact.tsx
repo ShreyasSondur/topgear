@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MapPin, Clock, Phone, Send, Calendar, MessageCircle } from "lucide-react";
+import { MapPin, Clock, Phone, Send, Calendar, MessageCircle, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -98,6 +98,24 @@ export default function LocationContact() {
                   <h4 className="text-white font-semibold text-sm mb-1.5">Reach Out to Us</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     +91 81051 56999
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full h-px bg-white/5" />
+
+              {/* GSTIN */}
+              <div className="flex gap-5 items-start">
+                <div className="w-10 h-10 rounded-full bg-[#111] border border-white/5 flex items-center justify-center shrink-0 mt-1">
+                  <ShieldCheck className="w-4 h-4 text-[#FF2E2E]" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold text-sm mb-1.5">GST Registration (GSTIN)</h4>
+                  <p className="text-gray-300 font-mono font-bold text-sm tracking-wider leading-relaxed">
+                    29DOHPB1768C1Z2
+                  </p>
+                  <p className="text-gray-500 text-xs mt-0.5">
+                    Official GST invoices issued for business & corporate tax claims.
                   </p>
                 </div>
               </div>

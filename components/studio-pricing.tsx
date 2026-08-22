@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight, FileText } from "lucide-react";
 import Link from "next/link";
 
 export default function StudioPricing() {
@@ -78,14 +78,20 @@ export default function StudioPricing() {
 
         {/* Footer Area */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/5">
-          <p className="text-gray-500 text-xs text-center md:text-left">
-            Prices vary by vehicle size. Final quote given upon inspection.
-          </p>
+          <div className="flex flex-col gap-1 text-center md:text-left">
+            <p className="text-gray-500 text-xs">
+              Prices vary by vehicle size. Final quote given upon inspection.
+            </p>
+            <p className="text-gray-400 text-xs font-medium flex items-center justify-center md:justify-start gap-1.5 mt-1">
+              <FileText className="w-3.5 h-3.5 text-[#FF2E2E]" />
+              GST Invoices Issued • <span className="font-mono text-gray-300">GSTIN: 29DOHPB1768C1Z2</span>
+            </p>
+          </div>
           
           <Link
             href="?book=true"
             scroll={false}
-            className="mt-8 w-full bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,46,46,0.3)] group-hover:shadow-[0_0_30px_rgba(255,46,46,0.5)] md:w-auto md:py-3 md:px-6 md:rounded-full md:shadow-[0_0_20px_rgba(255,46,46,0.4)]"
+            className="mt-8 w-full bg-gradient-to-r from-[#FF2E2E] to-[#cc2525] hover:from-[#e62929] hover:to-[#b32020] text-white py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,46,46,0.3)] group-hover:shadow-[0_0_30px_rgba(255,46,46,0.5)] md:w-auto md:py-3 md:px-6 md:rounded-full md:shadow-[0_0_20px_rgba(255,46,46,0.4)] md:mt-0"
           >
             <Calendar className="w-4 h-4" />
             <span className="text-xs md:text-sm font-bold tracking-wider uppercase">

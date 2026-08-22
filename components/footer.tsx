@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight, MapPin } from "lucide-react";
+import { ChevronRight, MapPin, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -20,15 +20,24 @@ export default function Footer() {
             </div>
             
             <div className="mt-12 pt-8 border-t border-white/5">
-              <div className="flex items-center gap-3 mb-4">
-                {/* Logo Icon Placeholder */}
-                <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <span className="text-white font-bold italic text-lg pr-1">TG</span>
+              <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                <div className="flex items-center gap-3">
+                  {/* Logo Icon Placeholder */}
+                  <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                    <span className="text-white font-bold italic text-lg pr-1">TG</span>
+                  </div>
+                  <span className="text-white font-bold tracking-widest uppercase text-sm">Topgear HQ</span>
                 </div>
-                <span className="text-white font-bold tracking-widest uppercase text-sm">Topgear HQ</span>
+
+                {/* GSTIN Badge */}
+                <div className="inline-flex items-center gap-2 bg-[#161616] border border-white/10 px-3.5 py-1.5 rounded-full text-xs shadow-sm">
+                  <ShieldCheck className="w-4 h-4 text-[#FF2E2E]" />
+                  <span className="text-gray-400 font-medium">GSTIN:</span>
+                  <span className="text-white font-mono font-bold tracking-wider">29DOHPB1768C1Z2</span>
+                </div>
               </div>
               <p className="text-gray-500 text-xs">
-                © 2026 Topgear HQ. All rights reserved.
+                © 2026 Topgear HQ. All rights reserved. • GST Registered Business
               </p>
             </div>
           </div>

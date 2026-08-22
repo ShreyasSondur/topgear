@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { ShieldCheck, ArrowLeftRight } from "lucide-react";
+import { ShieldCheck, ArrowLeftRight, FileText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,12 +31,20 @@ export default function Hero() {
       {/* Main Content */}
       <div className="relative z-10 flex-1 flex flex-col items-center pt-24 md:pt-32 px-4 w-full max-w-[1400px] mx-auto">
         
-        {/* Badge */}
-        <div className="hidden md:flex items-center gap-2 border border-[#FF2E2E]/30 bg-black/50 px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
-          <ShieldCheck className="w-5 h-5 text-[#FF2E2E]" />
-          <span className="text-[#FF2E2E] text-sm font-bold tracking-widest uppercase">
-            Mangaluru's Premium Car Care Studio
-          </span>
+        {/* Badges Container */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+          <div className="flex items-center gap-2 border border-[#FF2E2E]/30 bg-black/50 px-5 py-2 rounded-full backdrop-blur-sm shadow-[0_0_15px_rgba(255,46,46,0.15)]">
+            <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-[#FF2E2E]" />
+            <span className="text-[#FF2E2E] text-xs md:text-sm font-bold tracking-widest uppercase">
+              Mangaluru's Premium Car Care Studio
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2 border border-white/10 bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm hover:border-white/20 transition-all">
+            <FileText className="w-4 h-4 text-[#FF2E2E]" />
+            <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">GSTIN:</span>
+            <span className="text-white text-xs font-mono font-bold tracking-wider">29DOHPB1768C1Z2</span>
+          </div>
         </div>
 
         {/* Heading */}
@@ -116,7 +124,7 @@ export default function Hero() {
       {/* Footer Features Bar */}
       <div className="relative z-10 w-full border-t border-white/10 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+          <div className="flex flex-wrap md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0 text-center">
             <div className="text-gray-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors cursor-pointer">
               German Technology
             </div>
@@ -126,7 +134,7 @@ export default function Hero() {
             </div>
             <div className="hidden md:block w-px h-4 bg-white/10" />
             <div className="text-gray-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors cursor-pointer">
-              Pickup & Drop Available
+              GST Registered (29DOHPB1768C1Z2)
             </div>
             <div className="hidden md:block w-px h-4 bg-white/10" />
             <div className="text-gray-400 text-xs font-bold tracking-widest uppercase hover:text-white transition-colors cursor-pointer">
